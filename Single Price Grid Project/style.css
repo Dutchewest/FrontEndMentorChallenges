@@ -1,0 +1,190 @@
+
+body{
+    max-width: 1440px;
+    background-color: hsl(204, 43%, 93%);
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    color: black;
+    margin: 0 auto;
+    
+}
+
+.main-div{
+    max-width : 600px;
+    margin: 100px auto;
+    border-radius: 10px;
+    background-color: seashell;
+    line-height: 1.5em;
+  
+    
+}
+
+.upper-part{
+    padding: 25px;
+    padding-left: 40px;
+    margin-bottom: 15px;
+                
+}
+
+.lower-part{
+    
+    display: flex; /* This is used to control the display flow of the contents of the lower part of the container. */
+     
+}
+
+.lower-part1{
+    width: 50%;
+    background-color: hsl(179, 62%, 43%);
+    padding: 25px 40px;
+    padding-right: 10px;
+    border-bottom-left-radius: 10px;
+    
+    
+}
+
+.lower-part2{
+    width: 50%;
+    background-color: hsl(179, 60%, 45%);
+    padding-top: 25px;
+    padding-left: 40px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+.header_join_community{
+    color: hsl(179, 62%, 43%);
+    font-size: 1.5rem;
+}
+
+.thirty_day_hassle_free{
+    color: hsl(71, 73%, 54%);
+    font-size: 1rem;
+}
+
+.upper_part_paragraph{
+    color: hsl(218, 22%, 67%);
+    
+}
+
+.white_font_color {
+    color: white;
+}
+
+.font_weight{
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.twentynine_dollar{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.per_month{
+    color: hsl(178, 20%, 29%);
+}
+
+.font_size_full_access{
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.btn{ /* This controls the button characteristics. */
+    width: 230px;
+    height: 40px;
+    padding: 0 25px;
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    background-color: hsl(71, 73%, 54%) ;
+    border-radius: 5px;
+    border: none ;
+}
+
+ul{
+    color: white;
+    font-size: 12px;
+    list-style-type: none; /* This is used to remove the bullet design of the lists. */
+    padding: 0;
+    line-height: 20px;
+}
+
+
+
+@media screen and (max-width: 550px) { /* The media query takes effect once it reaches 550px to change to the media design. */
+
+    body{
+        max-width: 375px; /*Maximum width of the body used for the mobile design. */
+        background-color: hsl(204, 43%, 93%);
+        margin: 0 auto;
+    }
+
+    .main-div{
+        max-width : 300px; /* Width changed to 300px to go with the mobile design view. */
+        margin: 100px auto;
+        display: block;
+        border-radius: 10px;
+        background-color: seashell;
+        line-height: 1.5em;
+           
+    }
+
+    .upper-part{
+        padding: 20px;
+         padding-bottom: 10px;
+        
+     }
+ 
+
+    .lower-part{
+    
+        display: block; /* The display characteristics was changed to BLOCK from FLEX used for the desktop design. */
+           
+    }
+
+    
+    .lower-part1{
+        width: 260px; /* 260Ppx was used to size the lower-part1 container here as against the 50% used for desktop design. This is so as to achieve the desired design result for mobile view. */
+        background-color: hsl(179, 62%, 43%);
+        padding: 20px;
+        padding-top: 10px;
+        border-bottom-left-radius: 0; /* This is used to remove the curve on the border bottom from the desktop design view. */
+    }
+
+    .lower-part2{
+        width: 260px; /* 260Ppx was used to size the lower-part2 container here as against the 50% used for desktop design. This is so as to achieve the desired design result for mobile view. */
+        background-color: hsl(179, 60%, 45%);
+        padding: 20px;
+        padding-top: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .header_join_community{
+        color: hsl(179, 62%, 43%);
+        font-size: 1rem;
+    }
+
+    .thirty_day_hassle_free{
+        color: hsl(71, 73%, 54%);
+        font-size: 0.9rem;
+    }
+
+    .upper_part_paragraph{
+        color: hsl(218, 22%, 67%);
+        font-size: 0.8rem;
+        
+    }
+
+    .btn{
+        width: 250px; /* This controls the width of the button in mobile view. It was increased to 250px from 230px used for the desktop view to go with the design spec */
+      
+    }
+
+    
+}
+    
+
+
+
