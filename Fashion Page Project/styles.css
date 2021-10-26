@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    border: 2px solid red;
+}
+
+.header-div{
+    height: 900px;
+    border: 2px solid green;
+    background-image: url(./images/headerPartImage.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    
+   
+}
+
+.h1-paragraph-div{
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid yellow;
+    margin-bottom: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
+
+.about-h1{
+    border: 2px solid green;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 7rem;
+    color: white;
+    margin-top: 5px;
+    margin-left: 100px;
+    
+}
+
+.header-paragraph{
+    border: 2px solid blue;
+    width: 60%;
+    height: 100%;
+    font-size: 0.9rem;
+    padding: 25px;
+    line-height: 1.5rem;
+    margin-right: 100px;
+    background-color: white;
+}
+
+.first-pink-area{
+    padding: 50px 150px;
+    padding-bottom: 90px;
+    background-color: #f3c3c3;
+    color: white;
+    border: 2px solid blue;
+}
+
+.first-pink-paragraph{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 2.5rem;
+    margin-bottom: 20px;
+    
+}
+
+.l-span{
+    font-size: 7rem;
+   
+}
+
+.second-pink-paragraph{
+    width: 600px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1.2rem;
+
+}
+
+.ladies-image-area-size{
+    width: 33.33%;
+    height: 500px;
+        
+}
+
+.ladies-image-row1{
+    display: flex;
+    
+}
+
+.ladies-image-row2{
+    display: flex;
+    
+}
+
+.comimg-soon-div{
+    padding: 150px auto;
+    background-color: #f3c3c3;
+    color: white;
+    border: 2px solid blue;
+
+}
+
+.coming-soon-paragraph-div{
+    margin: 20px auto;
+    padding: 20px;
+    max-width: max-content;
+    border: 2px solid yellow;
+}
+
+.coming-soon-h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 4.5rem;
+    margin-bottom: 15px;
+    color: white;
+    text-align: center;
+}
+
+.coming-soon-paragraph{
+    font-size: 1.3rem;
+    
+}
+
+.form-one-div{
+    max-width: max-content;
+    margin: 50px auto;
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid red;
+}
+
+.form-one-name{
+    width: 180px;
+    margin-left: 80px;
+    padding: 10px 0;
+    padding-left: 5px;
+    border-radius: 40px;
+    border: none;
+}
+
+.form-one-email{
+    width: 185px;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding: 10px 0;
+    padding-left: 5px;
+    border-radius: 40px;
+    border: none;
+
+}
+
+.form-one-button{
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    height: 70px;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    margin-right: 50px;
+
+}
+
+.signature{
+    border: 2px solid green;
+    display: flex;
+    
+}
+
+.signature-div{
+    border: 2px solid purple;
+    width: max-content;
+    padding-top: 150px;
+    padding-right: 50px;
+    padding-left: 30px;
+}
+
+.signature-paragraph1{
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.lady-signature{
+    width: 550px;
+    height: 1000px;
+    margin-top: -25px;
+    margin-left: 50px;
+}
+
+.sign-signature{
+    width: 350px;
+    margin-left: 500px;
+    border-radius: 100%;
+    padding: 40px;
+    background-color: white;
+    
+}
+
+.spring-collection{
+    background-color: #f3c3c3;
+    height: 650px;
+    margin-top: -40px;
+}
+
+.spring-collection-header-div{
+    padding-top: 50px;
+}
+
+.spring-collection-header{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 4.5rem;
+    margin-bottom: 30px;
+    color: white;
+    text-align: center;
+}
+
+.spring-collection-images{
+    margin-top: 40px;
+    margin-left: 75px;
+    
+}
+
+.spring-collection-picture{
+    width: 350px;
+    height: 350px;
+    
+}
+
+.second-spring-image{
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.third-spring-image{
+    margin-right: 4px;
+}
+
+.right-direction-arrow{
+    margin-top: 20px;
+    margin-left: 780px;
+    
+    
+}
+
+.sample-products{
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 75px;
+    border: 2px solid green;
+}
+
+.sample-products-image{
+    width: 500px;
+    height: 350px;
+}
+
+.sample-price{
+    width: 350px;
+    height: 350px;
+    padding-top: 20px;
+}
+
+.sample-product-h5{
+    font-size: 1.7rem;
+    font-weight: 200;
+    margin-bottom: 30px;
+}
+
+.amount{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.sample-product-paragraph{
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.sample-product-button{
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+
+}
+
+.subscribe{
+    display: flex;
+    border: 2px solid rgb(245, 8, 245);
+}
+
+/* .flower-tea{
+    width: 50%;
+} */
+
+.subscribe-section-image{
+    width: 800px;
+    height: 800px;
+}
+
+.subscribe-div{
+    margin-top: 50px;
+}
+
