@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    color: black;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    border: 2px solid red;
+}
+
+.container{
+    width: 350px;
+    height: 400px;
+    margin: 150px auto;
+    border: 2px solid green;
+    background-color: cadetblue;
+    text-align: center;
+}
+
+.upper-span{
+    margin-top: 40px;
+}
+
+.lower-span{
+    margin-top: 40px;
+}
+
+button{
+    width: 90px;
+    font-size: 1rem;
+    padding: 5px;
+    margin-top: 50px;
+    /* margin-bottom: 20px; */
+}
+
