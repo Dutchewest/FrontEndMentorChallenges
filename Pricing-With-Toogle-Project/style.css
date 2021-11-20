@@ -1,0 +1,695 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 15px;
+    font-family: 'Montserrat';
+    color: black;
+}
+
+/* Media view styles starts here */
+@media (min-width: 450px) {
+    body{
+        max-width: 375px;
+        min-height: 100vh;
+        margin: 0 auto;
+        background: hsl(240, 78%, 98%);
+        color: black;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    /* The styling of the upper part before the main div starts here */
+    /* The start of the styling that controls the paragraph section heading and the toggle button */
+    .our-pricing{
+        margin-top: 40px;
+        margin-bottom: 15px;
+        font-size: 1.3rem;
+        color: hsl(234, 14%, 74%);
+        
+    }
+
+    .toggle-btn-paragraph{
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .toggle{
+        position: relative;
+        display: block;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: -5px;
+        width: 35px;
+        height: 20px;
+        padding: 3px;
+        border-radius: 15px;
+        background: hsl(236, 79%, 79%);
+        
+    }
+
+    .slider{
+        position: absolute;
+        display: block;
+        width: 15px;
+        height: 15px;
+        background: white;
+        border-radius: 50%;
+                 
+    }
+
+    #toggle-el.active > .slider{
+        left: 18px;
+    }
+   
+    .paragraph-text{
+        font-size: 0.4rem;
+        letter-spacing: 0.5px;
+        color: hsl(234, 14%, 74%);
+    }
+
+/* The end of the styling that controls the paragraph section heading and the toggle button */
+
+    /* This style of the main-container */
+
+    .main-container{
+        max-width: 350px;
+        font-size: 0.5rem;
+        letter-spacing: 0.5px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+      /* Styling of each Pricing Section Starts here */
+    
+    .plan-height{ /*These settings are used to style each pricing cards*/
+        width: 220px;
+        height: 330px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 10px;
+        line-height: 50px;
+    }
+
+    .amount-figure{ /*This style is used to control the $ and Amount*/
+        font-size: 2rem;
+        margin-top: -10px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .dollar-sign{
+        font-size: 1rem;
+   }
+
+    .paragraph-border-top{
+        border-top: 1.5px solid hsl(240, 78%, 98%);
+        width: 180px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    .professional-paragraph-border-top{
+        border-top: 1.5px solid hsl(234, 14%, 74%);
+        width: 180px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .paragraph-border-top-bottom{
+        border-top: 1.5px solid hsl(240, 78%, 98%);
+        border-bottom: 1.5px solid hsl(240, 78%, 98%);
+        width: 180px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .professional-paragraph-border-top-bottom{
+        border-top: 1.5px solid hsl(234, 14%, 74%);
+        border-bottom: 1.5px solid hsl(234, 14%, 74%);
+        width: 180px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .btn-width{
+        width: 180px;
+        height: 30px;
+        text-transform: uppercase;
+        font-size: 0.5rem;
+        letter-spacing: 1px;
+        margin-top: 20px;
+        border: none;
+        border-radius: 5px;
+        
+    }
+
+    .basic{
+        margin-bottom: 20px;
+        background: white;
+        
+    }
+
+    .btn-basic{
+        background: hsl(236, 79%, 79%);
+        color: white;
+    }
+
+    .professional{
+        margin-bottom: 20px;
+        background: hsl(236, 79%, 79%);
+        color: white;
+        
+    }
+
+    .btn-professional{
+        background: white;
+        color: hsl(236, 79%, 79%);
+    }
+
+    .master{
+        background: white;
+    }
+
+    .btn-master{
+        background: hsl(236, 79%, 79%);
+        color: white;
+
+    }
+
+ }
+
+
+/* Small Tablets Style starts here */
+@media all and (min-width: 620px){
+    
+body{
+    max-width: 600px;
+    min-height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+    background: hsl(240, 78%, 98%);
+
+    
+}
+
+/*The styling of the upper part before the main div starts here*/
+.our-pricing{
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    color: hsl(234, 14%, 74%);
+}
+
+.toggle-btn-paragraph{
+    margin-bottom: 40px;
+}
+
+.paragraph-text{
+    font-size: 0.4rem;
+    letter-spacing: 0.5px;
+    color: hsl(234, 14%, 74%);
+}
+
+.btn-toggle{
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* This style of the main-container */
+.main-container{
+    max-width: 95%;
+    font-size: 0.5rem;
+    letter-spacing: 0.5px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+   
+}
+
+/* Styling of each Pricing Section Starts here */
+    
+.plan-height{ /*These settings are used to style each pricing cards*/
+    width: 190px;
+    height: 330px;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 50px;
+    
+}
+
+
+.amount-figure{ /*This style is used to control the $ and Amount*/
+    font-size: 2rem;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.dollar-sign{
+    font-size: 1rem;
+}
+
+.paragraph-border-top{
+    border-top: 1.5px solid hsl(240, 78%, 98%);
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.professional-paragraph-border-top{
+    border-top: 1.5px solid hsl(234, 14%, 74%);
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.paragraph-border-top-bottom{
+    border-top: 1.5px solid hsl(240, 78%, 98%);
+    border-bottom: 1.5px solid hsl(240, 78%, 98%);
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.professional-paragraph-border-top-bottom{
+    border-top: 1.5px solid hsl(234, 14%, 74%);
+    border-bottom: 1.5px solid hsl(234, 14%, 74%);
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-width{
+    width: 150px;
+    height: 30px;
+    text-transform: uppercase;
+    font-size: 0.5rem;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+.basic{
+    margin-bottom: 20px;
+    background: white;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    
+    
+}
+
+.btn-basic{
+    background: hsl(236, 79%, 79%);
+    color: white;
+}
+
+.professional{
+    margin-top: -20px;
+    height: 365px;
+    margin-bottom: 10px;
+    background: hsl(236, 79%, 79%);
+    color: white;
+    
+    
+}
+
+.btn-professional{
+    background: white;
+    color: hsl(236, 79%, 79%);
+    margin-top: 40px;
+}
+
+.master{
+    background: white;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  
+}
+
+.btn-master{
+    background: hsl(236, 79%, 79%);
+    color: white;
+
+}
+
+}
+/* Small Tablets Style ends here */
+
+/* Big Tablets Style starts here */
+@media all and (min-width: 960px) {
+    
+body{
+    max-width: 900px;
+    min-height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+    background: hsl(240, 78%, 98%);
+
+    
+}
+
+/*The styling of the upper part before the main div starts here*/
+.our-pricing{
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    color: hsl(234, 14%, 74%);
+}
+
+.toggle-btn-paragraph{
+    margin-bottom: 40px;
+}
+
+.paragraph-text{
+    font-size: 0.4rem;
+    letter-spacing: 0.5px;
+    color: hsl(234, 14%, 74%);
+}
+
+
+/* This style of the main-container */
+.main-container{
+    max-width: 900px;
+    font-size: 0.5rem;
+    letter-spacing: 0.5px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* Styling of each Pricing Section Starts here */
+    
+.plan-height{ /*These settings are used to style each pricing cards*/
+    width: 220px;
+    height: 330px;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    line-height: 50px;
+    
+}
+
+
+.amount-figure{ /*This style is used to control the $ and Amount*/
+    font-size: 2rem;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.dollar-sign{
+    font-size: 1rem;
+}
+
+.paragraph-border-top{
+    border-top: 1.5px solid hsl(240, 78%, 98%);
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.professional-paragraph-border-top{
+    border-top: 1.5px solid hsl(234, 14%, 74%);
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.paragraph-border-top-bottom{
+    border-top: 1.5px solid hsl(240, 78%, 98%);
+    border-bottom: 1.5px solid hsl(240, 78%, 98%);
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.professional-paragraph-border-top-bottom{
+    border-top: 1.5px solid hsl(234, 14%, 74%);
+    border-bottom: 1.5px solid hsl(234, 14%, 74%);
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-width{
+    width: 180px;
+    height: 30px;
+    text-transform: uppercase;
+    font-size: 0.5rem;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+.basic{
+    margin-bottom: 20px;
+    background: white;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    
+    
+}
+
+.btn-basic{
+    background: hsl(236, 79%, 79%);
+    color: white;
+}
+
+.professional{
+    margin-top: -20px;
+    height: 365px;
+    margin-bottom: 10px;
+    margin-left: -120px;
+    margin-right: -120px;
+    background: hsl(236, 79%, 79%);
+    color: white;
+    
+}
+
+.btn-professional{
+    background: white;
+    color: hsl(236, 79%, 79%);
+    margin-top: 40px;
+}
+
+.master{
+    background: white;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    
+}
+
+.btn-master{
+    background: hsl(236, 79%, 79%);
+    color: white;
+
+}
+
+}
+/* Big tablet styles end here */
+
+/* Styling of desktop and laptop screens starts here */
+@media all and (min-width: 1200px) {
+
+    body{
+        max-width: 1440px;
+        min-height: 100vh;
+        margin: 0 auto;
+        text-align: center;
+        background: hsl(240, 78%, 98%);
+    
+        
+    }
+    
+    /*The styling of the upper part before the main div starts here*/
+    .our-pricing{
+        margin-top: 40px;
+        margin-bottom: 15px;
+        font-size: 1.3rem;
+        color: hsl(234, 14%, 74%);
+    }
+    
+    .toggle-btn-paragraph{
+        margin-bottom: 40px;
+    }
+    
+    .paragraph-text{
+        font-size: 0.4rem;
+        letter-spacing: 0.5px;
+        color: hsl(234, 14%, 74%);
+    }
+    
+    .btn-toggle{
+        width: 40px;
+        height: 20px;
+        border-radius: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    /* This style of the main-container */
+    .main-container{
+        max-width: 900px;
+        font-size: 0.5rem;
+        letter-spacing: 0.5px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    /* Styling of each Pricing Section Starts here */
+        
+    .plan-height{ /*These settings are used to style each pricing cards*/
+        width: 220px;
+        height: 330px;
+        padding: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 10px;
+        line-height: 50px;
+        
+    }
+    
+    .amount-figure{ /*This style is used to control the $ and Amount*/
+        font-size: 2rem;
+        margin-top: -10px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .dollar-sign{
+        font-size: 1rem;
+    }
+    
+    .paragraph-border-top{
+        border-top: 1.5px solid hsl(240, 78%, 98%);
+        width: 180px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    
+    .professional-paragraph-border-top{
+        border-top: 1.5px solid hsl(234, 14%, 74%);
+        width: 180px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .paragraph-border-top-bottom{
+        border-top: 1.5px solid hsl(240, 78%, 98%);
+        border-bottom: 1.5px solid hsl(240, 78%, 98%);
+        width: 180px;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    
+    .professional-paragraph-border-top-bottom{
+        border-top: 1.5px solid hsl(234, 14%, 74%);
+        border-bottom: 1.5px solid hsl(234, 14%, 74%);
+        width: 180px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .btn-width{
+        width: 180px;
+        height: 30px;
+        text-transform: uppercase;
+        font-size: 0.5rem;
+        letter-spacing: 1px;
+        margin-top: 20px;
+        border: none;
+        border-radius: 5px;
+        
+    }
+    
+    .basic{
+        margin-bottom: 20px;
+        background: white;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        
+        
+    }
+    
+    .btn-basic{
+        background: hsl(236, 79%, 79%);
+        color: white;
+    }
+    
+    .professional{
+        margin-top: -20px;
+        height: 365px;
+        margin-bottom: 10px;
+        margin-left: -120px;
+        margin-right: -120px;
+        background: hsl(236, 79%, 79%);
+        color: white;
+        
+    }
+    
+    .btn-professional{
+        background: white;
+        color: hsl(236, 79%, 79%);
+        margin-top: 40px;
+    }
+    
+    .master{
+        background: white;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        
+        
+    }
+    
+    .btn-master{
+        background: hsl(236, 79%, 79%);
+        color: white;
+    
+    }
+    
+
+
+
+
+
+}
+
